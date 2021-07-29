@@ -1,0 +1,294 @@
+.location_branch {
+    .nav-fluid {
+        background-color: $main_color;
+    }
+    .nav_bar {
+        justify-content: space-between;
+        padding: 0px 88px;
+        flex-wrap: wrap;
+        @include pad() {
+            padding: 0px 40px;
+        }
+        @include plus() {
+            padding: 0;
+            flex-direction: column;
+        }
+        .company_logo {
+            @include plus() {
+                margin: 10px 0px;
+            }
+            a {
+                @include word-hidden;
+                background-image: url(../../dist/image/logo.png);
+                width: 80px;
+                height: 49px;
+            }
+        }
+        .header {
+            @include plus() {
+                width: 100%;
+            }
+            .header_link_list {
+                flex-wrap: wrap;
+                li {
+                    text-align: center;
+                    margin-left: 64px;
+                    @include pad() {
+                        margin-left: 40px;
+                    }
+                    @include plus() {
+                        margin-left: 0;
+                        width: 50%;
+                        border: 1px solid $white;
+                    }
+                }
+                a {
+                    color: $white;
+                    @include word(20px, 30px);
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                    &:hover {
+                        color: #650300;
+                    }
+                    @include mobile() {
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                    }
+                }
+            }
+        }
+    }
+    .location_all {
+        padding-top: 96px;
+        padding-bottom: 160px;
+        @include pad() {
+            padding-top: 60px;
+            padding-bottom: 96px;
+        }
+        @include plus() {
+            padding-top: 28px;
+            padding-bottom: 56px;
+        }
+        h3 {
+            @include sub-title;
+        }
+    }
+    .location_city {
+        margin-bottom: 32px;
+        p {
+            @include word(24px, 30px);
+            margin-right: 20px;
+            white-space: nowrap;
+            @include pad() {
+                font-size: 16px;
+                margin-right: 20px;
+            }
+            @include plus() {
+                font-size: 14px;
+                margin-right: 12px;
+            }
+        }
+        select {
+            width: 324px;
+            padding: 8px;
+            border: 1px solid #ced4da;
+            @include pad() {
+                width: 237px;
+            }
+            @include plus() {
+                width: 277px;
+            }
+        }
+    }
+    .location_name {
+        border: 1px solid $border;
+        padding: 16px 24px;
+        p {
+            @include word(24px, 32px);
+        }
+    }
+    .location_content {
+        ul {
+            border: 1px solid $border;
+            padding: 16px 24px;
+        }
+        li {
+            margin-bottom: 8px;
+            @include word(20px, 30px);
+            @include pad() {
+                @include word(14px, 21px);
+            }
+        }
+        .fas,
+        .far {
+            margin-right: 11px;
+        }
+    }
+
+    .location_branch_content {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .location_branch {
+        width: 48%;
+        margin-right: 0 1%;
+        @include pad() {
+            width: 100%;
+            .location_branch_list {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 32px;
+                .location_img,
+                .location_content {
+                    width: 48%;
+                    margin: 0 1%;
+                }
+                @include plus() {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 16px;
+                    .location_img,
+                    .location_content {
+                        width: 100%;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    .location_map {
+        width: 48%;
+        height: 550px;
+        @include pad() {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .footer-fluid {
+        background-color: $main_color;
+        padding-top: 44px;
+        padding-bottom: 39px;
+    }
+    .about_us {
+        @include mobile() {
+            padding: 0px 20px;
+        }
+        p,
+        a {
+            color: $white;
+        }
+        .links {
+            justify-content: space-between;
+            margin-bottom: 36px;
+            @include pad() {
+                margin-bottom: 6px;
+            }
+            .page_link_list {
+                @include plus() {
+                    display: none;
+                }
+                li {
+                    margin-right: 48px;
+                    &:hover {
+                        border-bottom: 2px solid $white;
+                    }
+                    @include pad() {
+                        margin-right: 40px;
+                    }
+                    @include plus() {
+                        margin-right: 20px;
+                    }
+                }
+            }
+            .social_link_list {
+                li {
+                    &:not(:first-child) {
+                        margin-left: 32px;
+                    }
+                    @include pad() {
+                        &:not(:first-child) {
+                            margin-left: 20px;
+                        }
+                        img {
+                            width: 24px;
+                        }
+                    }
+                }
+                a:hover {
+                    filter: brightness(50%);
+                }
+            }
+            .call_us_list_mobile {
+                display: none;
+                @include plus() {
+                    display: block;
+                    display: flex;
+                    align-items: center;
+                    img {
+                        width: 25px;
+                        margin-right: 20px;
+                    }
+                }
+                @include plus() {
+                    img {
+                        width: 15px;
+                    }
+                }
+            }
+        }
+        .call_us {
+            .call_us_list {
+                display: flex;
+                align-items: center;
+                &:not(:last-child) {
+                    margin-bottom: 16px;
+                    @include plus() {
+                        display: none;
+                    }
+                }
+                &:nth-child(2) {
+                    padding-bottom: 24px;
+                    border-bottom: 1px solid white;
+                }
+                .pic {
+                    width: 40px;
+                    margin-right: 20px;
+
+                    @include pad() {
+                        width: 36px;
+                    }
+                    @include plus() {
+                        width: 18px;
+                    }
+                    @include mobile() {
+                        width: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .contract {
+        justify-content: space-between;
+        margin-top: 33px;
+        @include plus() {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .policy {
+            li {
+                margin-left: 48px;
+            }
+            @include plus() {
+                flex-direction: column;
+                align-items: flex-start;
+                li {
+                    margin-left: 0;
+                    &:first-child {
+                        margin: 8px 0px;
+                    }
+                }
+            }
+        }
+    }
+}

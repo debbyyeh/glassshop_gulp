@@ -1,0 +1,49 @@
+@mixin word($fz, $lh) {
+    font-size: $fz;
+    line-height: $lh;
+}
+@mixin title {
+    font-size: 48px;
+    line-height: 72px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-align: center;
+    @include pad() {
+        font-size: 24px;
+        line-height: 48px;
+        margin-bottom: 20px;
+    }
+}
+@mixin sub-title {
+    @include word(48px, 80px);
+    font-weight: bold;
+    padding-left: 16px;
+    border-left: 8px solid $main_color;
+    margin-bottom: 60px;
+    @include pad() {
+        @include word(28px, 40px);
+        margin-bottom: 24px;
+        border-left: 4px solid $main_color;
+    }
+}
+@mixin word-hidden {
+    background-repeat: no-repeat;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@mixin pad {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+@mixin plus {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media (max-width: 414px) {
+        @content;
+    }
+}
