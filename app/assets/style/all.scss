@@ -1,13 +1,19 @@
-@import "reset";
+@import "setting/reset";
+@import "setting/base";
+@import "setting/grid";
+@import "setting/variable";
+@import "setting/utility";
+
 @import "mixin";
-@import "base";
-@import "grid";
-@import "utility";
-@import "index";
-@import "product";
-@import "product.second";
-@import "location";
-@import "location_branch";
-@import "FAQ";
-@import "blog";
-@import "blogPage";
+@import "helper";
+@import "layout/header";
+@import "layout/footer";
+
+@import "page/index";
+@import "page/product";
+@import "page/product.second";
+@import "page/location";
+@import "page/location_branch";
+@import "page/FAQ";
+@import "page/blog";
+@import "page/blogPage";

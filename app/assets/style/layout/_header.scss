@@ -1,0 +1,60 @@
+// header
+.nav-fluid {
+    background-color: $main_color;
+}
+.nav_bar {
+    justify-content: space-between;
+    padding: 0px 88px;
+    flex-wrap: wrap;
+    @include pad() {
+        padding: 0px 40px;
+    }
+    @include plus() {
+        padding: 0;
+        flex-direction: column;
+    }
+    .company_logo {
+        @include plus() {
+            margin: 10px 0px;
+        }
+        a {
+            @include word-hidden;
+            background-image: url(../../dist/image/logo.png);
+            width: 80px;
+            height: 49px;
+        }
+    }
+    .header {
+        @include plus() {
+            width: 100%;
+        }
+        .header_link_list {
+            flex-wrap: wrap;
+            li {
+                text-align: center;
+                margin-left: 64px;
+                @include pad() {
+                    margin-left: 40px;
+                }
+                @include plus() {
+                    margin-left: 0;
+                    width: 50%;
+                    border: 1px solid $white;
+                }
+            }
+            a {
+                color: $white;
+                @include word(20px, 30px);
+                padding-top: 40px;
+                padding-bottom: 40px;
+                &:hover {
+                    color: #650300;
+                }
+                @include mobile() {
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                }
+            }
+        }
+    }
+}
