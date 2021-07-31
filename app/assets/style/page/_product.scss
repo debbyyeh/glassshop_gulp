@@ -198,6 +198,11 @@
     .btn-group {
         margin: 0 auto;
     }
+    .btn-toolbar .btn,
+    .btn-toolbar .btn-group,
+    .btn-toolbar .input-group {
+        float: none;
+    }
     .btn-primary {
         color: black;
         background-color: $white;
