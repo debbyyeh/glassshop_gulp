@@ -136,7 +136,7 @@ select {
     text-indent: 101%;
     overflow: hidden;
     white-space: nowrap;
-    background-image: url(../../images/logo.png);
+    background-image: url(https://upload.cc/i1/2021/07/31/kJ9nPN.png);
     width: 80px;
     height: 49px; }
   @media (max-width: 767px) {
@@ -292,7 +292,7 @@ select {
           margin: 8px 0px; } }
 
 .index .banner {
-  background-image: url(../../images/banner.png);
+  background-image: url(https://upload.cc/i1/2021/07/31/VYgpOd.png);
   height: 840px;
   color: #650300;
   position: relative; }
@@ -301,7 +301,7 @@ select {
       background-position-x: -490px; } }
   @media (max-width: 767px) {
     .index .banner {
-      background-image: url(../../images/banner-sm.png);
+      background-image: url(https://upload.cc/i1/2021/07/31/zb7LBE.png);
       background-position: left top;
       background-repeat: no-repeat;
       background-size: cover; } }
@@ -526,7 +526,7 @@ select {
                 flex-direction: row; } }
 
 .index .cross-fiuid {
-  background-image: url(../../images/bg.png);
+  background-image: url(https://upload.cc/i1/2021/07/31/asY3Oi.png);
   background-position: 50px center; }
 
 .index .crossProduct {
@@ -964,6 +964,20 @@ select {
 
 .product .btn-group {
   margin: 0 auto; }
+
+.product .btn-toolbar .btn,
+.product .btn-toolbar .btn-group,
+.product .btn-toolbar .input-group {
+  float: none; }
+
+.product .btn-group .btn + .btn,
+.product .btn-group .btn + .btn-group,
+.product .btn-group .btn-group + .btn,
+.product .btn-group .btn-group + .btn-group {
+  margin-left: -4px; }
+
+.product .btn-toolbar {
+  margin-left: 0; }
 
 .product .btn-primary {
   color: black;
@@ -1667,6 +1681,20 @@ select {
 
 .blog .btn-group {
   margin: 0 auto; }
+
+.blog .btn-toolbar .btn,
+.blog .btn-toolbar .btn-group,
+.blog .btn-toolbar .input-group {
+  float: none; }
+
+.blog .btn-group .btn + .btn,
+.blog .btn-group .btn + .btn-group,
+.blog .btn-group .btn-group + .btn,
+.blog .btn-group .btn-group + .btn-group {
+  margin-left: -4px; }
+
+.blog .btn-toolbar {
+  margin-left: 0; }
 
 .blog .btn-primary {
   color: black;
