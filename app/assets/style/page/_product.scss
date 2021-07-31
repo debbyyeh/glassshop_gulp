@@ -203,6 +203,15 @@
     .btn-toolbar .input-group {
         float: none;
     }
+    .btn-group .btn + .btn,
+    .btn-group .btn + .btn-group,
+    .btn-group .btn-group + .btn,
+    .btn-group .btn-group + .btn-group {
+        margin-left: -4px;
+    }
+    .btn-toolbar {
+        margin-left: 0;
+    }
     .btn-primary {
         color: black;
         background-color: $white;
