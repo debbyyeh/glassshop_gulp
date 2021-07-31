@@ -1274,6 +1274,10 @@ select {
   margin-right: 11px;
   width: 20px; }
 
+.location .location_content .fa-map-marker-alt {
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+
 .location .location_content input[type="button"] {
   background-color: black;
   color: white;
