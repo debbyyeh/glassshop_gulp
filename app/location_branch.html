@@ -1,0 +1,48 @@
+---
+title: 分店資訊
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<body class="location_branch">
+    <section>
+        <div class="location_all container">
+            <h3>門市據點</h3>
+            <div class="location_city df">
+                <p>選擇地區</p>
+                <select name="location_city" id="location_city">
+                    <option value="Taipei">台北市</option>
+                    <option value="New Taipei">新北市</option>
+                    <option value="Taichung">台中市</option>
+                    <option value="Kaohsiung">高雄市</option>
+                </select>
+            </div>
+            <div class="location_branch_content df">
+                <div class="location_branch">
+                    <ul>
+                        <li class="location_branch_list">
+                            <div class="location_img">
+                                <img src="dist/image/locate1.jpeg" alt="branch">
+                            </div>
+                            <div class="location_content">
+                                <div class="location_name">
+                                    <p>台北中山旗艦店</p>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-phone-alt"></i>電話：(02)000-1234</li>
+                                    <li><i class="far fa-clock"></i>營業時間：10:00-21:00</li>
+                                    <li><i class="fas fa-map-marker-alt"></i>地址：台北市中山區南京東路25巷2-1號</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="location_map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.1696377350218!2d121.50658331436387!3d25.06223888395917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a96ca8c547bb%3A0xf189dd515c0fdc5a!2z54Sh5Y-j5bCP5buaIE11a3VjaGkgS2l0Y2hlbiAmIEJhcg!5e0!3m2!1szh-TW!2stw!4v1627126030469!5m2!1szh-TW!2stw"
+                        width="100%" height="550px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+    </section>
+</body>
