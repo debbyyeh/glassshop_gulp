@@ -91,6 +91,9 @@
             margin-right: 11px;
             width: 20px;
         }
+        .fa-map-marker-alt {
+            flex-shrink: 0;
+        }
         input[type="button"] {
             background-color: black;
             color: $white;
