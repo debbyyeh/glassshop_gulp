@@ -220,7 +220,7 @@
         .cross_pic {
             justify-content: space-between;
             flex-wrap: wrap;
-            .cross_pic_product {
+            li {
                 position: relative;
                 width: 48%;
                 @include plus() {
