@@ -56,7 +56,7 @@
             padding-top: 28px;
             padding-bottom: 56px;
         }
-        h3 {
+        h2 {
             @include sub-title;
         }
     }
@@ -135,6 +135,9 @@
         p {
             @include word(20px, 30px);
             color: $gray;
+            @include pad() {
+                @include word(14px, 21px);
+            }
         }
         a {
             display: none;

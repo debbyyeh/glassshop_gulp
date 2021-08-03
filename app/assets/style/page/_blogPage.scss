@@ -56,6 +56,7 @@
         }
     }
     .blog_link {
+        margin-bottom: 8px;
         li {
             @include word(16px, 24px);
             &:nth-child(4) {
@@ -69,6 +70,9 @@
             @include plus() {
                 font-size: 12px;
             }
+        }
+        .link_last {
+            margin-bottom: 4px;
         }
         a {
             color: black;
@@ -97,7 +101,7 @@
         @include plus() {
             width: 100%;
         }
-        h3 {
+        h2 {
             @include word(48px, 95px);
             margin-bottom: 8px;
             @include pad() {
@@ -267,6 +271,10 @@
             li {
                 margin-bottom: 8px;
                 margin-right: 24px;
+                @include word(24px, 36px);
+                @include pad() {
+                    font-size: 16px;
+                }
                 @include plus() {
                     margin-right: 8px;
                     margin-bottom: 0;

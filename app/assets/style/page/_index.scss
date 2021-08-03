@@ -57,16 +57,8 @@
     }
     .highlights {
         color: $type_color;
-        padding-top: 60px;
-        padding-bottom: 80px;
-        @include pad() {
-            padding-top: 40px;
-        }
-        @include plus {
-            padding-top: 32px;
-            padding-bottom: 40px;
-        }
-        h3 {
+        @include layout;
+        h2 {
             @include title;
         }
         .point {
@@ -100,25 +92,25 @@
                     width: 100%;
                 }
             }
-            .img_wrap {
-                margin: 0 auto;
-                margin-bottom: 24px;
-                text-align: center;
-                @include pad() {
-                    margin-bottom: 25px;
-                }
-                @include plus() {
-                    margin-bottom: 20px;
-                }
+        }
+        .img_wrap {
+            margin: 0 auto;
+            margin-bottom: 24px;
+            text-align: center;
+            @include pad() {
+                margin-bottom: 25px;
             }
-            .point {
-                @include word(24px, 36px);
-                margin-bottom: 8px;
-                white-space: nowrap;
+            @include mobile() {
+                margin-bottom: 20px;
             }
-            .highlight_intro {
-                line-height: 24px;
-            }
+        }
+        .point {
+            @include word(24px, 36px);
+            margin-bottom: 8px;
+            white-space: nowrap;
+        }
+        .highlight_intro {
+            line-height: 24px;
         }
     }
     .highlight_material {
@@ -128,7 +120,7 @@
         padding-top: 40px;
         padding-bottom: 56px;
         font-weight: bold;
-        h3 {
+        h2 {
             @include title;
             color: $type_color;
         }
@@ -220,17 +212,8 @@
         background-position: 50px center;
     }
     .crossProduct {
-        padding-top: 60px;
-        padding-bottom: 80px;
-        @include pad() {
-            padding-top: 40px;
-            padding-bottom: 56px;
-        }
-        @include plus() {
-            padding-top: 32px;
-            padding-bottom: 40px;
-        }
-        h3 {
+        @include layout;
+        h2 {
             @include title;
             color: $white;
         }
@@ -255,16 +238,16 @@
                 }
                 .cross_pic_cover {
                     background-color: white;
-                    opacity: 50%;
                     width: 100%;
                     height: 100%;
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    display: flex;
                     justify-content: center;
-                    align-items: center;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    background-blend-mode: overlay;
+                    // 背景混合覆蓋
                     p {
                         @include word(32px, 25px);
                         color: $main_color;
@@ -275,17 +258,8 @@
         }
     }
     .comments {
-        padding-top: 60px;
-        padding-bottom: 80px;
-        @include pad() {
-            padding-top: 40px;
-            padding-bottom: 56px;
-        }
-        @include plus() {
-            padding-top: 32px;
-            padding-bottom: 40px;
-        }
-        h3 {
+        @include layout;
+        h2 {
             @include title;
             color: $main_color;
         }
@@ -330,16 +304,7 @@
     }
     .contact-fluid {
         background-color: $bg_pink;
-        padding-top: 60px;
-        padding-bottom: 80px;
-        @include pad() {
-            padding-top: 40px;
-            padding-bottom: 56px;
-        }
-        @include plus() {
-            padding-top: 32px;
-            padding-bottom: 40px;
-        }
+        @include layout;
     }
     .contact {
         width: 730px;
@@ -352,7 +317,7 @@
             width: 320px;
             padding: 0px 15px;
         }
-        h3 {
+        h2 {
             @include title;
             color: black;
         }

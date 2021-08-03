@@ -62,10 +62,14 @@
         padding-top: 80px;
         padding-bottom: 160px;
         @include pad() {
+            padding-top: 56px;
+            padding-bottom: 96px;
+        }
+        @include plus() {
             padding-top: 32px;
             padding-bottom: 56px;
         }
-        h3 {
+        h2 {
             @include word(42px, 63px);
             font-weight: bold;
             @include pad() {
