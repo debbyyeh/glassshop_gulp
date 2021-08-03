@@ -69,7 +69,8 @@ label {
   display: block; }
 
 input {
-  width: 100%; }
+  width: 100%;
+  background: transparent; }
   input:hover {
     cursor: pointer; }
 
